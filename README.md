@@ -57,6 +57,19 @@
 
 把它当"说明书"看也可以，照着一步步做同样能装好。
 
+## 下载失败怎么办（手动兜底）
+
+向导里的下载都走上游官方线路，网络不好时可能很慢或直接失败。**不用死等，直接去官网手动下载安装，装完回到向导重新点「开始安装」就行**——已满足的步骤会自动跳过。
+
+| 卡在哪 | 直接去官网下载 | 装完后 |
+| --- | --- | --- |
+| Git 下载慢 / 卡住 | https://git-scm.com/download/win | 关掉向导，重新双击 `双击安装.bat`，点「开始安装」 |
+| Node.js 下载慢 / 卡住 | https://nodejs.org/zh-cn/download | 同上 |
+| WebView2 运行库失败 | https://developer.microsoft.com/microsoft-edge/webview2/ | 同上 |
+| OpenClaw 桌面版下载失败 | https://github.com/openclaw/openclaw-windows-node/releases/latest | 双击装好后再打开桌面版，或回向导继续 |
+
+> 手动装完一定要**重新点一次「开始安装」**：向导会重新检测环境，已完成的组件直接跳过，只补装缺的那一项。
+
 ## 常见问题
 
 **双击后窗口闪一下就没了？**
@@ -67,7 +80,7 @@
 Windows 10 请到微软商店安装/更新「应用安装程序（App Installer）」，或手动安装 Git / Node / WebView2 后重新运行。
 
 **所有下载线路都失败？**
-通常是网络问题，开启代理后重试；也可以在浏览器手动下载桌面版安装包，再把文件放进 `%TEMP%\OpenClawInstaller` 目录。
+见上面「下载失败怎么办（手动兜底）」，直接去对应官网下载安装，装完重开向导再点「开始安装」。若桌面版已手动下好，也可以把安装包放进 `%TEMP%\OpenClawInstaller` 目录，向导会直接复用。
 
 **提示端口 18789 被占用？**
 说明已有 CLI 网关在运行。先执行 `openclaw gateway stop`，再让桌面版接管；安装向导里的「网关信息」按钮会显示当前端口和 Token。
