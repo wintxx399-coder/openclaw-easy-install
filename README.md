@@ -11,7 +11,9 @@
 
 ## 界面预览
 
-![安装向导：总体进度 71%，组件全部就绪，正在下载桌面版安装包](docs/screenshots/installer-wizard.png)
+![安装向导演示：环境检查 → 组件跳过 → 桌面版下载，实时进度](docs/screenshots/installer-demo.gif)
+
+<sub>动图未加载？看[静态截图](docs/screenshots/installer-wizard.png)</sub>
 
 ## 为什么做这个
 

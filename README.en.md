@@ -11,7 +11,9 @@
 
 ## Preview
 
-![Installer at 71%: components ready, desktop app downloading](docs/screenshots/installer-wizard.png)
+![Installer demo: environment check, skipped components, desktop download with live progress](docs/screenshots/installer-demo.gif)
+
+<sub>GIF not loading? See the [static screenshot](docs/screenshots/installer-wizard.png)</sub>
 
 ## Why this exists
 
