@@ -3,6 +3,10 @@
 > 双击运行，自动检查环境、装好 Gateway 与桌面版，全过程可视化进度。
 > 不用再手动折腾 PowerShell、Node.js、Git、WebView2。
 
+## 界面预览
+
+![安装向导：总体进度 72%，正在下载桌面版安装包](docs/screenshots/installer-wizard.jpg)
+
 ## 为什么做这个
 
 官方安装方式对新手不太友好：
