@@ -3,6 +3,12 @@
 > 双击运行，自动检查环境、装好 Gateway 与桌面版，全过程可视化进度。
 > 不用再手动折腾 PowerShell、Node.js、Git、WebView2。
 
+**简体中文** | [English](README.en.md)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/wintxx399-coder/openclaw-easy-install)](https://github.com/wintxx399-coder/openclaw-easy-install/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%2010%20%2F%2011-0078D6?logo=windows)](https://github.com/wintxx399-coder/openclaw-easy-install)
+
 ## 界面预览
 
 ![安装向导：总体进度 72%，正在下载桌面版安装包](docs/screenshots/installer-wizard.jpg)
@@ -93,6 +99,7 @@ Windows 10 请到微软商店安装/更新「应用安装程序（App Installer�
 ```
 openclaw-easy-install/
 ├── README.md
+├── README.en.md              # English version
 ├── LICENSE
 ├── windows/
 │   ├── 双击安装.bat          # 入口：双击这个
