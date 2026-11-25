@@ -23,7 +23,7 @@ Start-Sleep -Seconds 2
 
 $psi = New-Object System.Diagnostics.ProcessStartInfo
 $psi.FileName = $ff
-$psi.Arguments = "-y -f gdigrab -framerate 10 -offset_x $($screen.X) -offset_y $($screen.Y) -video_size $($screen.Width)x$($screen.Height) -i desktop -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p `"$out`""
+$psi.Arguments = "-y -f gdigrab -framerate 10 -offset_x $($screen.X) -offset_y $($screen.Y) -video_size $($screen.Width)x$($screen.Height) -i desktop -t 180 -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -movflags +frag_keyframe+empty_moov+default_base_moof `"$out`""
 $psi.UseShellExecute = $false
 $psi.CreateNoWindow = $true
 $psi.RedirectStandardInput = $true
@@ -34,7 +34,7 @@ Write-Host "Recording... (you can click Start now)" -ForegroundColor Green
 [void]$p.WaitForExit(300000)
 Start-Sleep -Seconds 1
 try { $rec.StandardInput.WriteLine('q'); $rec.StandardInput.Flush() } catch {}
-[void]$rec.WaitForExit(20000)
+[void]$rec.WaitForExit(15000)
 if (-not $rec.HasExited) { $rec.Kill() }
 
 if (Test-Path $out) {
