@@ -11,7 +11,7 @@
 
 ## Preview
 
-![Installer at 72%: component checklist and live download speed](docs/screenshots/installer-wizard.jpg)
+![Installer at 71%: components ready, desktop app downloading](docs/screenshots/installer-wizard.png)
 
 ## Why this exists
 

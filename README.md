@@ -11,7 +11,7 @@
 
 ## 界面预览
 
-![安装向导：总体进度 72%，正在下载桌面版安装包](docs/screenshots/installer-wizard.jpg)
+![安装向导：总体进度 71%，组件全部就绪，正在下载桌面版安装包](docs/screenshots/installer-wizard.png)
 
 ## 为什么做这个
 
